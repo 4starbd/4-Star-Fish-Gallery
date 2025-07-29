@@ -6,101 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>4 Star Fish Gallery</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
-      margin: 0;
-      padding: 0;
-      color: #000;
-    }
-    header {
-      background-color: #007BFF;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-    }
-    .logo {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .logo img {
-      width: 200px;
-    }
-    .contact, .price-list, .footer {
-      padding: 20px;
-      margin: auto;
-      max-width: 800px;
-    }
-    .contact-icon {
-      margin-right: 10px;
-    }
-    .order-button {
-      display: block;
-      width: fit-content;
-      background-color: #28a745;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin: 20px auto;
-      text-align: center;
-    }
-    .order-button:hover {
-      background-color: #218838;
-    }
-    .footer {
-      text-align: center;
-      background-color: #f1f1f1;
-      margin-top: 40px;
-      padding: 10px;
-    }
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+    header, footer { background-color: #003366; color: white; text-align: center; padding: 1em; }
+    .logo { width: 100px; border-radius: 50%; }
+    .contact { background-color: #e6f2ff; padding: 1em; text-align: center; }
+    .contact p { margin: 5px; }
+    .fish-list { display: flex; flex-wrap: wrap; justify-content: center; padding: 1em; }
+    .fish-item { background: white; border: 1px solid #ccc; border-radius: 10px; margin: 10px; padding: 10px; width: 200px; text-align: center; }
+    .fish-item img { width: 100%; height: 120px; object-fit: cover; border-radius: 5px; }
+    .order-btn { display: inline-block; margin-top: 10px; padding: 8px 16px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; }
+    .order-btn:hover { background-color: #218838; }
   </style>
 </head>
 <body>
   <header>
+    <img class="logo" src="logo.jpeg" alt="4 Star Fish Logo">
     <h1>4 Star Fish Gallery</h1>
-    <p>নদীর মাছ ও দেশী হাস</p>
+    <p>নদীর মাছ ও দেশী হাঁস</p>
   </header>
 
-  <div class="logo">
-    <img src="logo.jpeg" alt="4 Star Fish Gallery Logo">
-  </div>
-
   <div class="contact">
-    <p>
-      📞 <strong>Phone:</strong> +8801823-382350<br>
-      📧 <strong>Email:</strong> 4star.patuakhali@gmail.com<br>
-      📍 <strong>Address:</strong> বাড়ি#১২, রোড # ০৪, (পুরাতন-০২) দোকান #০৩, আদর্শনগর নতুন পানির পাম্প, আবুল হোটেলের পাশের গলি, মধ্যবাড্ডা, ঢাকা-১২১২
-    </p>
+    <p>📞 ফোন: +8801823-382350</p>
+    <p>📧 ইমেইল: 4star.patuakhali@gmail.com</p>
+    <p>📍 ঠিকানা: বাড়ি#১২, রোড # ০৪, (পুরাতন-০২) দোকান #০৩, আদর্শনগর, নতুন পানির পাম্প, আবুল হোটেলের পাশের গলি, মধ্যবাড্ডা, ঢাকা-১২১২।</p>
+    <p><a href="https://www.facebook.com/share/1Qsk4qvoiB/?mibextid=qi2Omg" target="_blank">🔗 Facebook Page</a></p>
   </div>
 
-  <div class="price-list">
-    <h2>দাম তালিকা (পার কেজি)</h2>
-    <ul>
-      <li>তপসি - ৭০০৳</li>
-      <li>কোরাল - ৮০০৳</li>
-      <li>বাইন - ৭০০৳</li>
-      <li>পাঙ্গাশ - ৭৫০৳</li>
-      <li>বাছা - ৬০০৳</li>
-      <li>পাবদা - ৪৫০৳</li>
-      <li>বেলে - ৬০০-১০০০৳</li>
-      <li>টেংরা - ৬০০৳</li>
-      <li>কাঠালি চিংড়ি - ৯৫০৳</li>
-      <li>ছোট চিংড়ি - ৭০০৳</li>
-      <li>গলদা চিংড়ি - ১১০০-১৫০০৳</li>
-      <li>পোমা - ৫০০৳</li>
-      <li>তুলা ডাডি - ৫০০৳</li>
-      <li>বোয়াল - ৭০০-১০০০৳</li>
-      <li>আইর - ৮০০-১৫০০৳</li>
-      <li>লোকাল খাশি - ১১০০৳</li>
-      <li>মোরক - ৭৫০৳</li>
-    </ul>
+  <section class="fish-list">
+    <div class="fish-item">
+      <img src="https://via.placeholder.com/200x120?text=তপসি" alt="তপসি">
+      <h3>তপসি - ৭০০৳</h3>
+    </div>
+    <div class="fish-item">
+      <img src="https://via.placeholder.com/200x120?text=কোরাল" alt="কোরাল">
+      <h3>কোরাল - ৮০০৳</h3>
+    </div>
+    <div class="fish-item">
+      <img src="https://via.placeholder.com/200x120?text=বাইন" alt="বাইন">
+      <h3>বাইন - ৭০০৳</h3>
+    </div>
+  </section>
+
+  <div style="text-align:center; margin: 20px;">
+    <a class="order-btn" href="https://www.facebook.com/share/1Qsk4qvoiB/?mibextid=qi2Omg" target="_blank">Order Now</a>
   </div>
 
-  <a class="order-button" href="https://www.facebook.com/share/1Qsk4qvoiB/?mibextid=qi2Omg" target="_blank">Order Now</a>
-
-  <div class="footer">
-    <p>&copy; 2025 4 Star Fish Gallery | Designed simply for easy use</p>
-  </div>
+  <footer>
+    <p>&copy; 2025 4 Star Fish Gallery</p>
+  </footer>
 </body>
 </html>
